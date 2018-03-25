@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.immo.entity">
+  <class name="Students" table="STUDENTS">
+  	 <id name="sid" type="int">
+  	 	<column name="SID"></column>
+  	 	<generator class="assigned"></generator>
+  	 </id>
+  	 
+  	 <property name="sname" type="java.lang.String">
+  	 	<column name="SNAME"></column>
+  	 </property>
+  	 
+  	 <property name="gender" type="java.lang.String">
+  	 	<column name="GENDER"></column>
+  	 </property>
+  	 
+  	 <property name="birthday" type="java.util.Date">
+  	 	<column name="BIRTHDAY"></column>
+  	 </property>
+  	 
+  	 <property name="address" type="java.lang.String">
+  	 	<column name="ADDRESS"></column>
+  	 </property>
+  </class>
+</hibernate-mapping>
